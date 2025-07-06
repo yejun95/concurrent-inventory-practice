@@ -1,4 +1,4 @@
-#재고시스템으로 알아보는 동시성 이슈 해결방법
+# 재고시스템으로 알아보는 동시성 이슈 해결방법
 - syncronized, Database Lock, Redis Distributed Lock 세 가지를 이용하여 동시성 이슈 해결 방법 알아보기
 <br>
 <hr>
