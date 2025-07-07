@@ -30,7 +30,7 @@ public class StockService {
 
     // NamedLock 테스트를 위한 메서드
     @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public synchronized void decrease_named(Long id, Long quantity) {
+    public synchronized void decrease_REQUIRES_NEW(Long id, Long quantity) {
         Stock stock = stockRepository.findById(id).orElseThrow();
         stock.decrease(quantity);
 
