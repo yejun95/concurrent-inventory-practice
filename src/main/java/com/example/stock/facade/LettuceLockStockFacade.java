@@ -23,7 +23,7 @@ public class LettuceLockStockFacade {
         }
 
         try {
-            stockService.decrease_REQUIRES_NEW(id, quantity);
+            stockService.decrease(id, quantity);
         } finally {
             redisLockRepository.unlock(id);
         }
